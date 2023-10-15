@@ -31,8 +31,8 @@ namespace OOP.Extensions
         public static EDays GetPrevDay(this EDays day)
         {
             int actualDay = (int)day;
-            int nextDay = (actualDay + GetLength() - 1) % GetLength();
-            return (EDays)nextDay;
+            int prevDay = (actualDay + GetLength() - 1) % GetLength();
+            return (EDays)prevDay;
         }
     }
 }
